@@ -1,10 +1,30 @@
+import {
+  About,
+  Contact,
+  Faqs,
+  Header,
+  Navbar,
+  Portfolio,
+  Services,
+  Testimonials,
+  Footer,
+  FloatingNav,
+} from './sections'
+
 function App() {
   return (
-    <div className='App'>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    <main>
+      <Navbar />
+      <Header />
+      <About />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Faqs />
+      <Contact />
+      <Footer />
+      <FloatingNav />
+    </main>
   )
 }
 
