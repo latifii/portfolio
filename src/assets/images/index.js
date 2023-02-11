@@ -1,12 +1,13 @@
-import Image1 from './project1.jpg'
-import Image2 from './project2.jpg'
-import Image3 from './project3.jpg'
-import Image4 from './project4.jpg'
-import Image5 from './project5.jpg'
-import Image6 from './project6.jpg'
-import Image7 from './project7.jpg'
-import Image8 from './project8.jpg'
-import Image9 from './project9.jpg'
+import Image1 from './project1.png'
+import Image2 from './project2.png'
+import Image3 from './project3.png'
+import Image4 from './project4.png'
+import Image5 from './project5.png'
+import Image6 from './project6.png'
+import Image7 from './project7.png'
+import Image8 from './project8.png'
+import Image9 from './project9.png'
+import Image10 from './project10.png'
 
 export {
   Image1,
@@ -18,4 +19,5 @@ export {
   Image7,
   Image8,
   Image9,
+  Image10,
 }

@@ -29,19 +29,14 @@ const Wrapper = styled.nav`
     display: flex;
     gap: 3.5rem;
   }
-
+  a {
+    color: white !important;
+  }
   #theme__icon {
     background: transparent;
     color: white;
     font-size: 2rem;
     cursor: pointer;
-  }
-
-  /* HIDE NAV MENU ON TABLETS AND PHONES */
-  @media screen and (max-width: 1024px) {
-    .nav__menu {
-      display: none;
-    }
   }
 `
 

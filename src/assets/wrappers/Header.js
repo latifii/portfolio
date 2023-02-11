@@ -69,6 +69,7 @@ const Wrapper = styled.header`
 
   /* MEDIA QUERIES (tablets) */
   @media screen and (max-width: 600px) {
+    margin-top: 0;
     .header__profile {
       width: 14rem;
       height: 17rem;

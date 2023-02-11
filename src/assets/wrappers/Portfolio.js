@@ -47,6 +47,7 @@ const Wrapper = styled.section`
     border-radius: var(--border-radius-2);
     margin-bottom: 1.5rem;
     overflow: hidden;
+    border: 1px solid #e7e7e7;
   }
 
   .portfolio__project p {

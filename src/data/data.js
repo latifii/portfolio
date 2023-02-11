@@ -1,14 +1,17 @@
-import { FaAward, FaServer } from 'react-icons/fa'
-import { TbBooks } from 'react-icons/tb'
-import { BiHappyHeartEyes } from 'react-icons/bi'
+import { FaAward, FaServer, FaWhatsapp, FaTelegram } from 'react-icons/fa'
+import { TbBooks, TbCertificate } from 'react-icons/tb'
 import { SiAdobexd } from 'react-icons/si'
 import { RiReactjsLine } from 'react-icons/ri'
-import { AiFillAppstore } from 'react-icons/ai'
+import { BsPersonFill } from 'react-icons/bs'
+import { MdHomeRepairService } from 'react-icons/md'
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
-  AiOutlineDribbble,
+  AiFillLinkedin,
   AiFillGithub,
+  AiFillAppstore,
+  AiFillMessage,
+  AiFillHome,
 } from 'react-icons/ai'
 import {
   Image1,
@@ -20,24 +23,34 @@ import {
   Image7,
   Image8,
   Image9,
+  Image10,
 } from '../assets/images/index'
+import { HiOutlineMail } from 'react-icons/hi'
 
 export const aboutData = [
-  { id: 1, icon: <FaAward />, title: 'Experience', desc: '3+ Years Working' },
-  { id: 2, icon: <TbBooks />, title: 'Projects', desc: '180+ Completed' },
+  { id: 1, icon: <FaAward />, title: 'Experience', desc: '1+ Years Working' },
+  { id: 2, icon: <TbBooks />, title: 'Projects', desc: '20+ Completed' },
   {
     id: 3,
-    icon: <BiHappyHeartEyes />,
-    title: 'Clients',
-    desc: '70+ happy clients',
+    icon: <TbCertificate />,
+    title: 'Certifications',
+    desc: '5 Completed',
   },
 ]
 
 export const headerData = [
-  { id: 1, link: 'https://instagram.com', icon: <AiOutlineInstagram /> },
-  { id: 2, link: 'https://twitter.com', icon: <AiOutlineTwitter /> },
-  { id: 3, link: 'https://dribbble.com', icon: <AiOutlineDribbble /> },
-  { id: 4, link: 'https://github.com', icon: <AiFillGithub /> },
+  {
+    id: 1,
+    link: 'https://www.instagram.com/hamii.13',
+    icon: <AiOutlineInstagram />,
+  },
+  { id: 2, link: 'https://twitter.com/hlatifii', icon: <AiOutlineTwitter /> },
+  {
+    id: 3,
+    link: 'https://www.linkedin.com/in/hamedlatifi',
+    icon: <AiFillLinkedin />,
+  },
+  { id: 4, link: 'https://github.com/latifii', icon: <AiFillGithub /> },
 ]
 
 export const navbarData = [
@@ -78,83 +91,169 @@ export const servicesData = [
 export const portfolioData = [
   {
     id: 1,
-    category: 'uiux',
+    category: 'react',
     image: Image1,
-    title: 'Project Title One (UIUX)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Jobster react-redux (open with VPN)',
+    desc: 'Job Tracking App using CSS, React, Redux toolkit',
+    demo: 'https://mrhamed-jobster.netlify.app/',
+    github: 'https://github.com/latifii/jobster',
   },
   {
     id: 2,
-    category: 'frontend',
+    category: 'react',
     image: Image2,
-    title: 'Project Title Two (Frontend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Ecommerce-comfy (react)',
+    desc: 'ecommerce-comfy App using CSS, React, Context-api',
+    demo: 'https://mrhamed-comfy.netlify.app/',
+    github: 'https://github.com/latifii/react-ecommerce-comfy',
   },
   {
     id: 3,
-    category: 'frontend',
+    category: 'javascript',
     image: Image3,
-    title: 'Project Title Three (Frontend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Ekama',
+    desc: 'Ekama App using CSS,Tailwind css, Js, jQuery, Php, Laravel',
+    demo: 'https://ekama.ir/',
   },
   {
     id: 4,
-    category: 'uiux',
+    category: 'react',
     image: Image4,
-    title: 'Project Title Four (UIUX)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Search github users (react)',
+    desc: 'Search github users App using CSS, React, Context-api',
+    demo: 'https://hami-search-github.netlify.app',
+    github: 'https://github.com/latifii/search-github-users',
   },
   {
     id: 5,
-    category: 'uiux',
+    category: 'vue',
     image: Image5,
-    title: 'Project Title Five (UIUX)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! ',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Medium clone (vue.js)',
+    desc: 'Medium clone App using CSS, Vue.js, Vuex',
+    demo: 'https://mrhamed-medium.netlify.app',
+    github: 'https://github.com/latifii/medium-clone',
   },
   {
     id: 6,
-    category: 'frontend',
+    category: 'vue',
     image: Image6,
-    title: 'Project Title Six (Frontend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Todo List (vue.js)',
+    desc: 'Todo list App using HTML, CSS, Vue.js ',
+    demo: 'https://hami-todoapp.netlify.app/',
+    github: 'https://github.com/latifii/todo-app',
   },
+
   {
     id: 7,
-    category: 'frontend',
+    category: 'javascript',
     image: Image7,
-    title: 'Project Title Seven (Frontend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Nartab template',
+    desc: 'Nartab template using HTML, CSS, Vanilla Javascript',
+    demo: 'https://mrhamed-nartab.netlify.app/',
+    github: 'https://github.com/latifii/nartab-template',
   },
   {
     id: 8,
-    category: 'backend',
+    category: 'mini-project',
     image: Image8,
-    title: 'Project Title Eight (Backend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Quiz (react)',
+    desc: 'Quiz react App using CSS, React, Context-api',
+    demo: 'https://mrhamed-quiz.netlify.app/',
+    github: 'https://github.com/latifii/react-exercises/tree/master/21-quiz',
   },
   {
     id: 9,
-    category: 'frontend',
+    category: 'mini-project',
     image: Image9,
-    title: 'Project Title Nine (Frontend)',
-    desc: 'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!',
-    demo: 'http://egatortutorials.com',
-    github: 'https://github.com/egattor',
+    title: 'Hacker news (react)',
+    desc: 'Quiz react App using CSS, React, Context-api',
+    demo: 'https://mrhamed-hacker.netlify.app/',
+    github:
+      'https://github.com/latifii/react-exercises/tree/master/20-hacker-news',
   },
+  {
+    id: 10,
+    category: 'mini-project',
+    image: Image10,
+    title: 'Pig Game',
+    desc: 'Pig Game App using HTML, CSS, Vanilla Javascript',
+    demo: 'https://mrhamed-pig.netlify.app/',
+    github: 'https://github.com/latifii/Pig-Game',
+  },
+]
+
+export const faqsData = [
+  {
+    id: 1,
+    question: 'What do you need to start working on my project?',
+    answer:
+      'It mostly depends on the type of project. But in general, you need a fair idea of what you want, then we can take it from there.',
+  },
+  {
+    id: 2,
+    question: 'How long will my project take to complete?',
+    answer:
+      'This depends on the complexity of the project, your available, and your payment. Once you have this sorted out, I will give you a completion date.',
+  },
+  {
+    id: 5,
+    question: 'Is hosting and domain registration inclusive in your pricing?',
+    answer:
+      'No! Hosting and domain is taken care of seperately. You can pay for it or take care of it on your own if you know how to.',
+  },
+  {
+    id: 4,
+    question: 'How much do you charge for an average website or app?',
+    answer:
+      "Once again, this depends. But my prices are affordable so you're good.",
+  },
+  {
+    id: 3,
+    question: "What's your payment plan?",
+    answer:
+      'Payment is divided into 3. An initial 30% upfront payment to get me started once all the details of the projec is set, 40% once the project is completed, and 30% once the project is delivered.',
+  },
+  {
+    id: 6,
+    question: "What if the project doesn't turn out good?",
+    answer:
+      'You will be a part of the process from the start. You will know how the whole project is going until the end. And I will make sure to give you the best.',
+  },
+]
+
+export const contactData = [
+  { id: 1, icon: <HiOutlineMail />, link: 'mailto:latifi.hami@gmail.com' },
+  {
+    id: 2,
+    icon: <FaTelegram />,
+    link: 'https://t.me/latifii',
+  },
+  { id: 3, icon: <FaWhatsapp />, link: 'https://wa.me/+989377512323' },
+]
+
+export const socials = [
+  { id: 1, link: '#', title: 'Home' },
+  { id: 2, link: '#about', title: 'About' },
+  { id: 3, link: '#services', title: 'Services' },
+  { id: 4, link: '#portfolio', title: 'Portfolio' },
+  { id: 5, link: '#contact', title: 'Contact' },
+]
+
+export const primaryColors = [
+  { className: 'color-1' },
+  { className: 'color-2' },
+  { className: 'color-3' },
+  { className: 'color-4' },
+  { className: 'color-5' },
+  { className: 'color-6' },
+]
+
+export const backgroundColors = [{ className: 'bg-1' }, { className: 'bg-2' }]
+
+export const floatingData = [
+  { id: 1, link: '#', icon: <AiFillHome /> },
+  { id: 2, link: '#about', icon: <BsPersonFill /> },
+  { id: 3, link: '#services', icon: <MdHomeRepairService /> },
+  { id: 4, link: '#portfolio', icon: <AiFillAppstore /> },
+  { id: 5, link: '#contact', icon: <AiFillMessage /> },
 ]

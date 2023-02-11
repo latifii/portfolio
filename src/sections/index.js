@@ -1,4 +1,5 @@
 import About from './About'
+import Blog from './Blog'
 import Contact from './Contact'
 import Faqs from './Faqs'
 import FloatingNav from './FloatingNav'
@@ -7,7 +8,6 @@ import Header from './Header'
 import Navbar from './Navbar'
 import Portfolio from './Portfolio'
 import Services from './Services'
-import Testimonials from './Testimonials'
 
 export {
   About,
@@ -19,5 +19,5 @@ export {
   Navbar,
   Portfolio,
   Services,
-  Testimonials,
+  Blog,
 }
