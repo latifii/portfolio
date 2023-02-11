@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Wrapper from '../assets/wrappers/Header'
 import { headerData } from '../data/data'
 import pic from '../assets/images/avatar.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 })
+  }, [])
+
   return (
     <Wrapper id='header'>
       <div className='container header__container'>
         <div
           className='header__profile aos-init aos-animate'
-          data-aos='fade-in'
+          data-aos='zoom-in'
         >
           <img src={pic} alt='Header Portait' />
         </div>
