@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const getLocalStorage = () => {
-  let getLocal = localStorage.getItem('theme-port')
-  return JSON.parse(getLocal)
-}
-const initialState = getLocalStorage() || {
+// const getLocalStorage = () => {
+//   let getLocal = localStorage.getItem('theme-port')
+//   return JSON.parse(getLocal)
+// }
+const initialState = JSON.parse(localStorage.getItem('theme-port')) || {
   primary: 'color-1',
   background: 'bg-1',
 }
