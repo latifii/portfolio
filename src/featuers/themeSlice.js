@@ -4,7 +4,7 @@ const getLocalStorage = () => {
   let getLocal = localStorage.getItem('theme-port')
   return JSON.parse(getLocal)
 }
-const initialState = getLocalStorage || {
+const initialState = getLocalStorage() || {
   primary: 'color-1',
   background: 'bg-1',
 }
