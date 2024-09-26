@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import {
   About,
   Contact,
@@ -11,23 +11,24 @@ import {
   Blog,
   Footer,
   FloatingNav,
-} from './sections'
-import Theme from './sections/Theme'
+} from "./sections";
+import Theme from "./sections/Theme";
+import Skills from "./sections/Skills";
 
 function App() {
-  const { primary, background } = useSelector((store) => store.theme)
-  const mainRef = useRef()
+  const { primary, background } = useSelector((store) => store.theme);
+  const mainRef = useRef();
 
-  const [showFloatingNav, setShowFloatingNav] = useState(true)
-  const [siteYPostion, setSiteYPosition] = useState(0)
+  const [showFloatingNav, setShowFloatingNav] = useState(true);
+  const [siteYPostion, setSiteYPosition] = useState(0);
 
   const showFloatingNavHandler = () => {
-    setShowFloatingNav(true)
-  }
+    setShowFloatingNav(true);
+  };
 
   const hideFloatingNavHandler = () => {
-    setShowFloatingNav(false)
-  }
+    setShowFloatingNav(false);
+  };
 
   // check if floating nav should be shown or hidden
   const floatingNavToggleHandler = () => {
@@ -36,35 +37,36 @@ function App() {
       siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
       siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
     ) {
-      showFloatingNavHandler()
+      showFloatingNavHandler();
     } else {
-      hideFloatingNavHandler()
+      hideFloatingNavHandler();
     }
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y)
-  }
+    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
+  };
 
   useEffect(() => {
-    const checkYPosition = setInterval(floatingNavToggleHandler, 2000)
+    const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
 
     // cleanup function
-    return () => clearInterval(checkYPosition)
+    return () => clearInterval(checkYPosition);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [siteYPostion])
+  }, [siteYPostion]);
 
   useEffect(() => {
     localStorage.setItem(
-      'theme-port',
+      "theme-port",
       JSON.stringify({
         primary,
         background,
       })
-    )
-  }, [primary, background])
+    );
+  }, [primary, background]);
   return (
     <main className={`${primary} ${background}`} ref={mainRef}>
       <Navbar />
       <Header />
       <About />
+      <Skills />
       <Services />
       <Portfolio />
       <Blog />
@@ -74,7 +76,7 @@ function App() {
       <Theme />
       {showFloatingNav && <FloatingNav />}
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
