@@ -40,6 +40,6 @@ const Wrapper = styled.div`
     width: 10rem;
   }
   .skill__name {
-    font-weight: bold;
+    font-weight: 400;
   }
 `;

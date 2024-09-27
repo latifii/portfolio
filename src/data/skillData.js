@@ -31,3 +31,20 @@ export const skillData = [
   { id: 12, name: "Material UI", logo: muiLogo },
   { id: 13, name: "Git", logo: gitLogo },
 ];
+
+export const techLogoMap = {
+  js: jsLogo,
+  ts: tsLogo,
+  react: reactLogo,
+  next: nextLogo,
+  bootstrap: bootstrapLogo,
+  jquery: jqueryLogo,
+  redux: reduxLogo,
+  "react-query": rqLogo,
+  "styled-component": styledLogo,
+  tailwind: tailwindLogo,
+  vue: vueLogo,
+  mui: muiLogo,
+  git: gitLogo,
+  css: cssLogo,
+};

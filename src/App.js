@@ -7,7 +7,6 @@ import {
   Header,
   Navbar,
   Portfolio,
-  Services,
   Blog,
   Footer,
   FloatingNav,
@@ -67,7 +66,7 @@ function App() {
       <Header />
       <About />
       <Skills />
-      <Services />
+      {/* <Services /> */}
       <Portfolio />
       <Blog />
       <Faqs />

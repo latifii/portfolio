@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   font-size: 0.9rem;
 }
@@ -250,4 +250,16 @@ img {
   section > p {
     width: var(--container-width-md);
   }
+}
+
+.carousel-container {
+  width: 100%; /* عرض کامل برای کانتینر کاروسل */
+  overflow: hidden;
+}
+
+/* تصویر در کاروسل */
+.carousel-image-container img {
+  width: 100%; /* عرض کامل برای تصاویر */
+  height: auto; /* حفظ نسبت تصویر */
+  object-fit: cover; /* پر کردن کانتینر بدون اعوجاج تصویر */
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   .portfolio__categories {
@@ -7,7 +7,16 @@ const Wrapper = styled.section`
     gap: 1.5rem;
     flex-wrap: wrap;
   }
+  .portfolio__project {
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
 
+  .container {
+    max-width: 100%;
+    overflow: hidden;
+  }
   .btn.cat__btn {
     text-transform: capitalize;
     transition: var(--transition);
@@ -20,7 +29,7 @@ const Wrapper = styled.section`
   .portfolio__projects {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: start;
   }
@@ -49,9 +58,11 @@ const Wrapper = styled.section`
     overflow: hidden;
     border: 1px solid #e7e7e7;
   }
-
+  .portfolio__project h4 {
+    margin: 0.6rem 0;
+  }
   .portfolio__project p {
-    margin: 0.5rem 0 2rem;
+    margin: 0.6rem 0;
   }
 
   .portfolio__project-cta {
@@ -67,6 +78,18 @@ const Wrapper = styled.section`
     background: transparent;
     color: var(--color-primary);
     border-color: var(--color-primary);
+  }
+
+  .portfolio__project-tech {
+    display: flex;
+    align-items: center;
+    margin: 0.6rem 0;
+  }
+
+  .portfolio__project-tech img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
 
   /* MEDIA QUERIES (tablets) */
@@ -92,6 +115,6 @@ const Wrapper = styled.section`
       gap: 1.5rem;
     }
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;

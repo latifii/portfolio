@@ -13,23 +13,7 @@ import {
   AiFillMessage,
   AiFillHome,
 } from "react-icons/ai";
-import {
-  Image1,
-  Image2,
-  Image3,
-  Image4,
-  Image5,
-  Image6,
-  Image7,
-  Image8,
-  Image9,
-  Image10,
-  Image11,
-  Image12,
-  Image13,
-  Image14,
-  Image15,
-} from "../assets/images/index";
+
 import { HiOutlineMail } from "react-icons/hi";
 
 export const aboutData = [
@@ -61,7 +45,7 @@ export const headerData = [
 export const navbarData = [
   { id: 1, link: "#", title: "Home" },
   { id: 2, link: "#about", title: "About" },
-  { id: 3, link: "#services", title: "Services" },
+  // { id: 3, link: "#services", title: "Services" },
   { id: 4, link: "#portfolio", title: "Portfolio" },
   { id: 5, link: "#contact", title: "Contact" },
 ];
@@ -90,114 +74,6 @@ export const servicesData = [
     icon: <AiFillAppstore />,
     title: "App Development",
     desc: "Unlike other developers in the market, I will building an app that runs on both IOS and Android devices without any extra cost to you.",
-  },
-];
-
-export const portfolioData = [
-  {
-    id: 1,
-    category: "react",
-    image: Image1,
-    title: "Jobster react-redux (open with VPN)",
-    desc: "Job Tracking App using CSS, React, Redux toolkit",
-    demo: "https://mrhamed-jobster.netlify.app/",
-    github: "https://github.com/latifii/jobster",
-  },
-  {
-    id: 2,
-    category: "react",
-    image: Image2,
-    title: "Ecommerce-comfy (react)",
-    desc: "ecommerce-comfy App using CSS, React, Context-api",
-    demo: "https://mrhamed-comfy.netlify.app/",
-    github: "https://github.com/latifii/react-ecommerce-comfy",
-  },
-  {
-    id: 3,
-    category: "javascript",
-    image: Image3,
-    title: "Ekama",
-    desc: "Ekama App using CSS,Tailwind css, Js, jQuery, Php, Laravel",
-    demo: "https://ekama.ir/",
-  },
-  {
-    id: 11,
-    category: "javascript",
-    image: Image11,
-    title: "Koomeh",
-    desc: "Koomeh App using CSS,Bootstrap, Js, jQuery, Php, Laravel",
-    demo: "https://koomeh.ir/",
-  },
-  {
-    id: 12,
-    category: "javascript",
-    image: Image12,
-    title: "Giland Melk",
-    desc: "Giland App using CSS,Bootstrap, Js, jQuery, Php, Laravel",
-    demo: "https://gilandmelk.ir/",
-  },
-  {
-    id: 13,
-    category: "javascript",
-    image: Image13,
-    title: "Mihan Melk",
-    desc: "Mihan Melk App using CSS,Bootstrap, Js, jQuery, Php, Laravel",
-    demo: "https://mmelk.ir/",
-  },
-
-  {
-    id: 14,
-    category: "javascript",
-    image: Image14,
-    title: "Kolbeh",
-    desc: "Kolbeh App using CSS,Bootstrap, Js, jQuery, Php, Laravel",
-    demo: "https://kolbeh.ir/",
-  },
-
-  {
-    id: 15,
-    category: "javascript",
-    image: Image15,
-    title: "Arman ",
-    desc: "Arman uni App using CSS,Bootstrap, Js, jQuery, Php, Laravel",
-    demo: "https://tmc-hmu.ir/",
-  },
-  {
-    id: 7,
-    category: "javascript",
-    image: Image7,
-    title: "Nartab template",
-    desc: "Nartab template using HTML, CSS, Vanilla Javascript",
-    demo: "https://mrhamed-nartab.netlify.app/",
-    github: "https://github.com/latifii/nartab-template",
-  },
-  {
-    id: 5,
-    category: "vue",
-    image: Image5,
-    title: "Medium clone (vue.js)",
-    desc: "Medium clone App using CSS, Vue.js, Vuex",
-    demo: "https://mrhamed-medium.netlify.app",
-    github: "https://github.com/latifii/medium-clone",
-  },
-  {
-    id: 4,
-    category: "react",
-    image: Image4,
-    title: "Search github users (react)",
-    desc: "Search github users App using CSS, React, Context-api",
-    demo: "https://hami-search-github.netlify.app",
-    github: "https://github.com/latifii/search-github-users",
-  },
-
-  {
-    id: 10,
-    category: "mini-project",
-    image: Image10,
-    title: "Pig Game",
-    desc: "Pig Game App using HTML, CSS, Vanilla Javascript",
-    demo: "https://mrhamed-pig.netlify.app/",
-    github: "https://github.com/latifii/Pig-Game",
   },
 ];
 
