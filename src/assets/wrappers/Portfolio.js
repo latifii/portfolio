@@ -50,8 +50,8 @@ const Wrapper = styled.section`
   .portfolio__project-image {
     width: 100%;
     height: fit-content;
-    min-height: 7rem;
-    max-height: 15rem;
+    height: 7rem;
+    /* max-height: 15rem; */
     background: var(--color-light);
     border-radius: var(--border-radius-2);
     margin-bottom: 1.5rem;

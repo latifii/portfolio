@@ -12,6 +12,7 @@ import vueLogo from "./vuejs.png";
 import muiLogo from "./mui.png";
 import gitLogo from "./git.png";
 import cssLogo from "./css.png";
+import htmlLogo from "./html.png";
 
 export {
   jsLogo,
@@ -28,4 +29,5 @@ export {
   muiLogo,
   gitLogo,
   cssLogo,
+  htmlLogo,
 };

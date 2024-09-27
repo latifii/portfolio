@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { techLogoMap } from "../data/skillData";
 
-const Project = ({ image, title, desc, demo, github, tech }) => {
+const Project = ({ image, title, desc, demo, github, tech, development }) => {
   return (
     <Card className="portfolio__project">
       {image.length > 1 ? (
@@ -63,6 +63,7 @@ const Project = ({ image, title, desc, demo, github, tech }) => {
               <img
                 key={`image-${i}`}
                 src={item}
+                className="portfolio__project-image"
                 alt="projects pic"
                 style={{
                   display: "block",
@@ -78,6 +79,7 @@ const Project = ({ image, title, desc, demo, github, tech }) => {
         <img
           src={image[0]}
           alt="projects pic"
+          className="portfolio__project-image"
           style={{
             display: "block",
             height: "100%",
@@ -100,19 +102,26 @@ const Project = ({ image, title, desc, demo, github, tech }) => {
               width: "25px",
               height: "25px",
               marginRight: "10px",
+              objectFit: "fill",
             }}
           />
         ))}
       </div>
       <div className="portfolio__project-cta">
-        <a
-          href={demo}
-          className="btn sm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit
-        </a>
+        {development ? (
+          <button className="btn sm disabled" disabled>
+            Under Development
+          </button>
+        ) : (
+          <a
+            href={demo}
+            className="btn sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit
+          </a>
+        )}
         {github && (
           <a
             href={github}

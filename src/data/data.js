@@ -17,7 +17,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 
 export const aboutData = [
-  { id: 1, icon: <FaAward />, title: "Experience", desc: "1+ Years Working" },
+  { id: 1, icon: <FaAward />, title: "Experience", desc: "3 Years Working" },
   { id: 2, icon: <TbBooks />, title: "Projects", desc: "10+ Completed" },
   {
     id: 3,

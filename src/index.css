@@ -200,6 +200,12 @@ img {
 .btn.sm {
   padding: 0.5rem 1.2rem;
 }
+.btn.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none; /* غیرفعال‌سازی کلیک */
+}
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {

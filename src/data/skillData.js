@@ -13,6 +13,7 @@ import {
   muiLogo,
   gitLogo,
   cssLogo,
+  htmlLogo,
 } from "../assets/images/skills/index";
 
 export const skillData = [
@@ -22,7 +23,7 @@ export const skillData = [
   { id: 3, name: "React.js", logo: reactLogo },
   { id: 4, name: "Next.js", logo: nextLogo },
   { id: 5, name: "Vue.js", logo: vueLogo },
-  { id: 6, name: "Redux", logo: reduxLogo },
+  { id: 6, name: "Redux-toolkit", logo: reduxLogo },
   { id: 7, name: "React-Query", logo: rqLogo },
   { id: 8, name: "jQuery", logo: jqueryLogo },
   { id: 9, name: "Bootstrap", logo: bootstrapLogo },
@@ -47,4 +48,5 @@ export const techLogoMap = {
   mui: muiLogo,
   git: gitLogo,
   css: cssLogo,
+  html: htmlLogo,
 };
