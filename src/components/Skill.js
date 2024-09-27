@@ -15,18 +15,31 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
   padding: 0.4rem;
-  border: 1px solid #000;
+  border: 1px solid #b9b9b9;
   border-radius: 0.5rem;
-  width: 10rem;
+  width: 14rem;
   height: 5rem;
+  transform: none;
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: translateX(0) translateY(0) translateZ(0) scale(1.05);
+  }
   .skill__img {
     width: 3rem;
     height: 3rem;
     border-radius: 0.5rem;
+    object-fit: fill;
   }
   .skill__name {
-    font-weight: 500;
+    font-weight: 600;
+  }
+
+  /* MEDIA QUERIES (phones) */
+  @media screen and (max-width: 600px) {
+    width: 10rem;
+  }
+  .skill__name {
+    font-weight: bold;
   }
 `;
