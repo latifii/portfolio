@@ -18,6 +18,9 @@ import codeCompass1 from "./code-cmpass1.png";
 import codeCompass2 from "./code-cmpass2.png";
 import codeCompassAdmin1 from "./code-admin1.png";
 import codeCompassAdmin2 from "./code-admin2.png";
+import wegal1 from "./wegal1.png";
+import wegal2 from "./wegal2.png";
+import wegal3 from "./wegal3.png";
 
 export {
   Image1,
@@ -40,4 +43,7 @@ export {
   codeCompass2,
   codeCompassAdmin1,
   codeCompassAdmin2,
+  wegal1,
+  wegal2,
+  wegal3,
 };

@@ -14,6 +14,7 @@ import {
   gitLogo,
   cssLogo,
   htmlLogo,
+  antdLogo,
 } from "../assets/images/skills/index";
 
 export const skillData = [
@@ -31,6 +32,7 @@ export const skillData = [
   { id: 11, name: "Styled-components", logo: styledLogo },
   { id: 12, name: "Material UI", logo: muiLogo },
   { id: 13, name: "Git", logo: gitLogo },
+  { id: 14, name: "Ant Design", logo: antdLogo },
 ];
 
 export const techLogoMap = {
@@ -49,4 +51,5 @@ export const techLogoMap = {
   git: gitLogo,
   css: cssLogo,
   html: htmlLogo,
+  "ant-design": antdLogo,
 };

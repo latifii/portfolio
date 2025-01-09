@@ -13,6 +13,7 @@ import muiLogo from "./mui.png";
 import gitLogo from "./git.png";
 import cssLogo from "./css.png";
 import htmlLogo from "./html.png";
+import antdLogo from "./ant-design.svg";
 
 export {
   jsLogo,
@@ -30,4 +31,5 @@ export {
   gitLogo,
   cssLogo,
   htmlLogo,
+  antdLogo,
 };

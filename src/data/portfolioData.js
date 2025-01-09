@@ -18,17 +18,30 @@ import {
   codeCompass2,
   codeCompassAdmin1,
   codeCompassAdmin2,
+  wegal1,
+  wegal2,
+  wegal3,
 } from "../assets/images/projects/index";
 
 export const portfolioData = [
+  // {
+  //   id: 1,
+  //   category: "react",
+  //   image: [dashGiland1, dashGiland2, dashGiland3, dashGiland4],
+  //   title: "Giland Melk Dashboard",
+  //   desc: "Giland Melk Dashboard using Tailwind,TypeScript, React, React-Query",
+  //   demo: "",
+  //   tech: ["tailwind", "ts", "react", "react-query"],
+  //   development: true,
+  // },
   {
     id: 1,
     category: "react",
-    image: [dashGiland1, dashGiland2, dashGiland3, dashGiland4],
-    title: "Giland Melk Dashboard",
-    desc: "Giland Melk Dashboard using Tailwind,TypeScript, React, React-Query",
+    image: [wegal1, wegal2, wegal3],
+    title: "Wegal Dashboard",
+    desc: "Wegal Dashboard using React, TypeScript ,Redux , React-Query,  Ant-Design",
     demo: "",
-    tech: ["tailwind", "ts", "react", "react-query"],
+    tech: ["react", "ts", "redux", "react-query", "ant-design"],
     development: true,
   },
   {
